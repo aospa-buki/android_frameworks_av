@@ -2476,6 +2476,8 @@ status_t Camera3Device::configureStreamsLocked(int operatingMode,
         return BAD_VALUE;
     }
 
+#define CAMERA_PACKAGE_NAME "com.oplus.packageName"
+
 #ifdef CAMERA_PACKAGE_NAME
     sp<VendorTagDescriptor> vTags;
     sp<VendorTagDescriptorCache> vCache = VendorTagDescriptorCache::getGlobalVendorTagCache();
